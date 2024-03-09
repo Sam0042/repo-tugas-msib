@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Arial, Helvetica, sans-serif;background-color: lightgrey;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pegawai</title>
+</head>
+
+<body>
+        <h1 align="center" style="font-size: 3rem;font-weight: bold;">DATA PEGAWAI</h1>
+        <div align="left" style="padding:1rem;width: 400px;margin: 0 auto;border: 1px solid black;border-radius: 25px;">
+            <h3>Nama: Muhammad Hisyam Mubarak</h3>
+            <h3>NIM: 0110220068</h3>
+            <h3>Asal: Sekolah Tinggi Teknologi Nurul Fikri</h3>
+        </div>
+        <table border="1px" cellpadding="10" cellspacing="0" align="center" width="70%">
+            <thead align="center" style="background-color: lightsalmon;">
+                <tr align="center">
+                    <td>Nama Pegawai</td>
+                    <td>Jabatan</td>
+                    <td>Status</td>
+                    <td>Gaji Pokok</td>
+                    <td>Tunjangan Jabatan</td>
+                    <td>BPJS</td>
+                    <td>Tunjangan Keluarga</td>
+                </tr>
+            </thead>
+            <tbody style="background-color: lightgrey;">
+                <tr align="center">
+                    <script>
+                        let pegawai = "Ridwan";
+                        let jabatan = "Manager";
+                        let status = "Menikah";
+                        let gajiPokok = 0;
+
+                        //logic gaji pokok
+                        if (jabatan == "Manager") {
+                            gajiPokok = 15000000;
+                        }
+                        else if (jabatan == "Asisten Manager") {
+                            gajiPokok = 10000000;
+                        }
+                        else if (jabatan == "Staff") {
+                            gajiPokok = 5000000;
+                        }
+                        else {
+                            gajiPokok = 0
+                        }
+
+                        //logic tunjangan jabatan
+                        let tunjanganJabatan = 0.15 * gajiPokok;
+
+                        //logic bpjs
+                        let bpjs = 0.10 * gajiPokok;
+
+                        //logic tunjangan keluarga
+                        let tunjanganKeluarga = status == "Menikah" ? 0.20 * gajiPokok : "0";
+
+                        document.write("<td>" + pegawai + "</td><br><td>"
+                            + jabatan + "</td><br><td>"
+                            + status + "</td><br><td>"
+                            + gajiPokok + "</td><br><td>"
+                            + tunjanganJabatan + "</td><br><td>"
+                            + bpjs + "</td><br><td>"
+                            + tunjanganKeluarga + "</td>")
+                    </script>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr align="center">
+                    <td style="background-color: lightsalmon;" colspan="3">Total Gaji</td>
+                    <td colspan="4" style="background-color: lightgrey;">
+                        <script>
+                            let totalGaji = gajiPokok - (tunjanganJabatan + bpjs + tunjanganKeluarga)
+                            document.write(totalGaji)
+                        </script>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+
+</html>
