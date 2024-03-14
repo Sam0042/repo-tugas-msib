@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilai UAS</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        thead{
+            background-color: lightblue;
+        }
+        body{
+            background-color: lightgreen;
+        }
+        td{
+            background-color: white;
+        }
+        footer{
+            bottom: 0;
+            position: fixed;
+        }
+        .kkm{
+            font-size: 0.7rem;
+            color: black;
+            text-align: center;
+            margin-top: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 align="center">Hasil UAS Mahasiswa Universitas Marabunta Depok</h1>
+    <table border="1" align="center" width="70%" cellpadding="10" cellspacing="0" width="50%">
+        <thead align="center">
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Nilai</th>
+                <th>Keterangan</th>
+                <th>Grade</th>
+                <th>Predikat</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+    
+            <script>
+                //array objek
+                let mahasiswaKeseluruhan = [
+                    {
+                        "nama": "Arif Hidayat",
+                        "nilai": 85
+                    },
+                    {
+                        "nama": "Ahmad Solahuddin",
+                        "nilai": 90
+                    }, 
+                    {
+                        "nama": "Sofyan Alhafidz",
+                        "nilai": 75
+                    }, 
+                    {
+                        "nama": "Arsyaf Siregar",
+                        "nilai": 65
+                    },
+                    {
+                        "nama": "Hanna Salifa",
+                        "nilai": 35
+                    },
+                    {
+                        "nama": "Sofia Nur Salamah",
+                        "nilai": 92
+                    },
+                    {
+                        "nama": "Hisyam Mubarak",
+                        "nilai": 100
+                    },
+                    {
+                        "nama": "Alfian Tanjung",
+                        "nilai": 45
+                    },
+                    {
+                        "nama": "Khabib Nurmagedon",
+                        "nilai": 78
+                    },
+                ]
+    
+                let nomor = 1;
+                let grade = "";
+                let predikat = "";
+                let keterangan = "";
+                for (mahasiswa of mahasiswaKeseluruhan) {
+                    if (mahasiswa.nilai > 85 && mahasiswa.nilai <= 100) {
+                        grade = "A"
+                    }
+                    else if (mahasiswa.nilai > 75 && mahasiswa.nilai <= 85) {
+                        grade = "B"
+                    }
+                    else if (mahasiswa.nilai > 65 && mahasiswa.nilai <= 75) {
+                        grade = "C"
+                    }
+                    else if (mahasiswa.nilai > 0 && mahasiswa.nilai <= 65) {
+                        grade = "D"
+                    }
+    
+                    switch (grade) {
+                        case "A": predikat = "Sempurna"; break;
+                        case "B": predikat = "Baik"; break;
+                        case "C": predikat = "Cukup"; break;
+                        case "D": predikat = "Kurang"; break;
+                        case "E": predikat = "Buruk"; break;
+                        default: predikat = ""; break;
+                    }
+    
+                    if(mahasiswa.nilai >= 75){
+                        keterangan = "Lulus"
+                    }
+                    else{
+                        keterangan = "Tidak Lulus"
+                    }
+    
+                    document.write("<tr>")
+                    document.write("<td>" + (nomor) + "</td>")
+                    document.write("<td>" + mahasiswa.nama + "</td>")
+                    document.write("<td>" + mahasiswa.nilai + "</td>")
+                    document.write("<td>" + keterangan + "</td>")
+                    document.write("<td>" + grade + "</td>")
+                    document.write("<td>" + predikat + "</td>")
+                    document.write("</tr>")
+                    nomor++
+                }                
+            </script>
+        </tbody>
+    </table>
+    <p class="kkm">*KKM = 75</p>
+</body>
+<footer>
+    <p>&copy;Hisyam Mubarak 2024</p>
+</footer>
+</html>
