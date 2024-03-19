@@ -1,0 +1,59 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url("img/background.jpg");
+  background-size: cover; /* Cover the entire background */
+  /* background-position: center; Center the background image */
+  background-repeat: no-repeat;
+}
+#card {
+  width: 30%;
+  background: rgb(26, 66, 78);
+  background: linear-gradient(90deg, rgba(26, 66, 78, 1) 0%, rgba(35, 152, 187, 1) 100%);
+  /* border: 1px solid; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 10% auto auto auto;
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+#pegawai {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+  color: lightgrey;
+}
+
+.pegawai-label {
+  text-align: left;
+}
+
+.pegawai-input {
+  border-radius: 10px;
+  height: 1.5rem;
+}
+
+#button {
+  background-color: orange;
+  padding: 1rem auto;
+}
+
+#button:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+#validator {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: rgb(255, 33, 33);
+}
