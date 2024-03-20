@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handler</title>
+    <link rel="stylesheet" href="css/style1.css" />
+  </head>
+  <body>
+    <section class="gambar-container">
+      <div id="div1">KUCING</div>
+      <div id="div2">KUDA</div>
+      <div id="div3">ANJING</div>
+    </section>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      var kucing = new Audio();
+      kucing.src = "audio/kucing.mp3";
+      var kuda = new Audio();
+      kuda.src = "audio/kuda.mp3";
+      var anjing = new Audio();
+      anjing.src = "audio/anjing.mp3";
+
+      $("document").ready(function () {
+        $("#div1").mouseover(function () {
+          $(this).css({
+            background: "url('https://www.mongabay.co.id/wp-content/uploads/2023/06/kucing-rumahan-unsplash-768x512.jpeg')",
+          });
+          kucing.play();
+        });
+        $("div").mouseout(function () {
+          $(this).css({
+            background: "purple",
+          });
+        });
+        $("#div2").mouseover(function () {
+          $(this).css({
+            background: "url('https://contents.mediadecathlon.com/p2217963/k$5e711b5c21951bbc44f5fcff7e2db4fd/schooling-horse-and-pony-riding-bridle-reins-black-leather.jpg?format=auto&quality=70&f=768x768')",
+          });
+          kuda.play();
+        });
+        $("#div3").mouseover(function () {
+          $(this).css({
+            background: "url('https://images-cdn.9gag.com/photo/aXo7yPV_700b.jpg')",
+          });
+          anjing.play();
+        });
+      });
+    </script>
+  </body>
+</html>
