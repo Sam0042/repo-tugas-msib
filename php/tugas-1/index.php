@@ -10,7 +10,11 @@ $fb = "Facebook";
 $ig = "Instagram";
 $ld = "LinkedIn";
 $gh = "Github";
-$by = "hisyammubarak"
+$by = "hisyammubarak";
+$fbLink = "https://www.facebook.com/hisyammubarak09";
+$igLink = "https://www.instagram.com/mhysam_/";
+$ldLink = "https://www.linkedin.com/in/muhammad-hisyam-mubarak-311445186/";
+$ghLink = "https://github.com/Sam0042";
 ?>
 
 <!DOCTYPE html>
@@ -37,10 +41,10 @@ $by = "hisyammubarak"
     </div>
     <div class="sosial">
         <h1>SOSIAL</h1>
-        <a class="fb" target="_blank" href="https://www.facebook.com/hisyammubarak09"><?=$fb?></a>
-        <a class="ig" target="_blank" href="https://www.facebook.com/hisyammubarak09"><?=$ig?></a>
-        <a class="ld" target="_blank" href="https://www.facebook.com/hisyammubarak09"><?=$ld?></a>
-        <a class="gh" target="_blank" href="https://www.facebook.com/hisyammubarak09"><?=$gh?></a>
+        <a class="fb" target="_blank" href=<?=$fbLink?>><?=$fb?></a>
+        <a class="ig" target="_blank" href=<?=$igLink?>><?=$ig?></a>
+        <a class="ld" target="_blank" href=<?=$ldLink?>><?=$ld?></a>
+        <a class="gh" target="_blank" href=<?=$ghLink?>><?=$gh?></a>
     </div>
 </body>
 <footer>
