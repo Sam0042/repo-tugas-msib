@@ -1,0 +1,99 @@
+html {
+  background: rgb(13, 31, 35);
+  background: linear-gradient(124deg, rgba(13, 31, 35, 1) 27%, rgba(179, 179, 179, 1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+/* body {
+  text-align: center;
+} */
+body img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* fb */
+.fb {
+  text-decoration: none;
+  background-color: #0263e3;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.fb:hover {
+  background-color: #1877f2;
+}
+/* ig */
+.ig {
+  text-decoration: none;
+  background-color: #c13584;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.ig:hover {
+  background-color: #f446a9;
+} /* ld */
+.ld {
+  text-decoration: none;
+  background-color: #0077b5;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.ld:hover {
+  background-color: #0397e6;
+} /* gh */
+.gh {
+  text-decoration: none;
+  background-color: #d6d6d6;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.gh:hover {
+  background-color: white;
+}
+.dataDiri {
+  background: rgb(0, 68, 83);
+  background: linear-gradient(157deg, rgba(0, 68, 83, 1) 27%, rgba(70, 171, 194, 1) 100%);
+  width: 50%;
+  margin: auto;
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 1.5rem auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dataDiri h1 {
+  text-align: center;
+}
+.sosial {
+  background: rgb(0, 68, 83);
+  background: linear-gradient(157deg, rgba(0, 68, 83, 1) 27%, rgba(70, 171, 194, 1) 100%);
+  width: 50%;
+  margin: auto;
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 2rem auto;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sosial a {
+  margin: 0.2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flex {
+  display: flex;
+}
+.flex-text {
+  margin-left: 1rem;
+}
+footer div {
+  font-size: 10px;
+  bottom: 0;
+  text-align: center;
+}
